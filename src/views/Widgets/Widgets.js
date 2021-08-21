@@ -25,7 +25,7 @@ import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 
 import { widgetStories, bugs, website, server } from "variables/general.js";
-
+////
 import image from "assets/img/faces/card-profile1-square.jpg";
 
 import {

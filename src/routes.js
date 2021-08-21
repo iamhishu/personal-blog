@@ -1,28 +1,28 @@
 import Buttons from "views/Components/Buttons.js";
 import Calendar from "views/Calendar/Calendar.js";
 import Charts from "views/Charts/Charts.js";
-import Dashboard from "views/Dashboard/Dashboard.js";
-import ErrorPage from "views/Pages/ErrorPage.js";
+// import Dashboard from "views/Dashboard/Dashboard.js";
+// import ErrorPage from "views/Pages/ErrorPage.js";
 import ExtendedForms from "views/Forms/ExtendedForms.js";
 import ExtendedTables from "views/Tables/ExtendedTables.js";
 import FullScreenMap from "views/Maps/FullScreenMap.js";
 import GoogleMaps from "views/Maps/GoogleMaps.js";
 import GridSystem from "views/Components/GridSystem.js";
 import Icons from "views/Components/Icons.js";
-import LockScreenPage from "views/Pages/LockScreenPage.js";
-import LoginPage from "views/Pages/LoginPage.js";
+//import LockScreenPage from "views/Pages/LockScreenPage.js";
+//import LoginPage from "views/Pages/LoginPage.js";
 import Notifications from "views/Components/Notifications.js";
 import Panels from "views/Components/Panels.js";
-import PricingPage from "views/Pages/PricingPage.js";
+//import PricingPage from "views/Pages/PricingPage.js";
 import RTLSupport from "views/Pages/RTLSupport.js";
 import ReactTables from "views/Tables/ReactTables.js";
-import RegisterPage from "views/Pages/RegisterPage.js";
+//import RegisterPage from "views/Pages/RegisterPage.js";
 import RegularForms from "views/Forms/RegularForms.js";
 import RegularTables from "views/Tables/RegularTables.js";
 import SweetAlert from "views/Components/SweetAlert.js";
 import TimelinePage from "views/Pages/Timeline.js";
 import Typography from "views/Components/Typography.js";
-import UserProfile from "views/Pages/UserProfile.js";
+//import UserProfile from "views/Pages/UserProfile.js";
 import ValidationForms from "views/Forms/ValidationForms.js";
 import VectorMap from "views/Maps/VectorMap.js";
 import Widgets from "views/Widgets/Widgets.js";
@@ -40,14 +40,14 @@ import WidgetsIcon from "@material-ui/icons/Widgets";
 import Home from "views/Pages/Home";
 import About from "./views/Pages/About";
 var dashRoutes = [
-  {
-    path: "/dashboard",
-    name: "Dashboard",
-    rtlName: "لوحة القيادة",
-    icon: DashboardIcon,
-    component: Dashboard,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/dashboard",
+  //   name: "Dashboard",
+  //   rtlName: "لوحة القيادة",
+  //   icon: DashboardIcon,
+  //   component: Dashboard,
+  //   layout: "/admin",
+  // },
   {
     path: "/home",
     name: "Home",
@@ -73,15 +73,15 @@ var dashRoutes = [
     icon: Image,
     state: "pageCollapse",
     views: [
-      {
-        path: "/pricing-page",
-        name: "Pricing Page",
-        rtlName: "عالتسعير",
-        mini: "PP",
-        rtlMini: "ع",
-        component: PricingPage,
-        layout: "/auth",
-      },
+      // {
+      //   path: "/pricing-page",
+      //   name: "Pricing Page",
+      //   rtlName: "عالتسعير",
+      //   mini: "PP",
+      //   rtlMini: "ع",
+      //   component: PricingPage,
+      //   layout: "/auth",
+      // },
       {
         path: "/rtl-support-page",
         name: "RTL Support",
@@ -100,51 +100,51 @@ var dashRoutes = [
         component: TimelinePage,
         layout: "/admin",
       },
-      {
-        path: "/login-page",
-        name: "Login Page",
-        rtlName: "هعذاتسجيل الدخول",
-        mini: "L",
-        rtlMini: "هعذا",
-        component: LoginPage,
-        layout: "/auth",
-      },
-      {
-        path: "/register-page",
-        name: "Register Page",
-        rtlName: "تسجيل",
-        mini: "R",
-        rtlMini: "صع",
-        component: RegisterPage,
-        layout: "/auth",
-      },
-      {
-        path: "/lock-screen-page",
-        name: "Lock Screen Page",
-        rtlName: "اقفل الشاشة",
-        mini: "LS",
-        rtlMini: "هذاع",
-        component: LockScreenPage,
-        layout: "/auth",
-      },
-      {
-        path: "/user-page",
-        name: "User Profile",
-        rtlName: "ملف تعريفي للمستخدم",
-        mini: "UP",
-        rtlMini: "شع",
-        component: UserProfile,
-        layout: "/admin",
-      },
-      {
-        path: "/error-page",
-        name: "Error Page",
-        rtlName: "صفحة الخطأ",
-        mini: "E",
-        rtlMini: "البريد",
-        component: ErrorPage,
-        layout: "/auth",
-      },
+      // {
+      //   path: "/login-page",
+      //   name: "Login Page",
+      //   rtlName: "هعذاتسجيل الدخول",
+      //   mini: "L",
+      //   rtlMini: "هعذا",
+      //   component: LoginPage,
+      //   layout: "/auth",
+      // },
+      // {
+      //   path: "/register-page",
+      //   name: "Register Page",
+      //   rtlName: "تسجيل",
+      //   mini: "R",
+      //   rtlMini: "صع",
+      //   component: RegisterPage,
+      //   layout: "/auth",
+      // },
+      // {
+      //   path: "/lock-screen-page",
+      //   name: "Lock Screen Page",
+      //   rtlName: "اقفل الشاشة",
+      //   mini: "LS",
+      //   rtlMini: "هذاع",
+      //   component: LockScreenPage,
+      //   layout: "/auth",
+      // },
+      // {
+      //   path: "/user-page",
+      //   name: "User Profile",
+      //   rtlName: "ملف تعريفي للمستخدم",
+      //   mini: "UP",
+      //   rtlMini: "شع",
+      //   component: UserProfile,
+      //   layout: "/admin",
+      // },
+      // {
+      //   path: "/error-page",
+      //   name: "Error Page",
+      //   rtlName: "صفحة الخطأ",
+      //   mini: "E",
+      //   rtlMini: "البريد",
+      //   component: ErrorPage,
+      //   layout: "/auth",
+      // },
     ],
   },
   {

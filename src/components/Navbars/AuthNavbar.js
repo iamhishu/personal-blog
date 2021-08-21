@@ -21,7 +21,7 @@ import AccountTreeIcon from "@material-ui/icons/AccountTree";
 import GitHubIcon from "@material-ui/icons/GitHub";
 //import Home from "../../views/Pages/Home";
 // core components
-import CodeIcon from "@material-ui/icons/Code";
+
 import PersonIcon from "@material-ui/icons/Person";
 import Button from "components/CustomButtons/Button";
 import styles from "assets/jss/material-dashboard-pro-react/components/authNavbarStyle.js";
@@ -74,7 +74,7 @@ export default function AuthNavbar(props) {
           />
         </NavLink>
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <NavLink
           to={"/auth/projects"}
           className={cx(classes.navLink, {
@@ -88,8 +88,8 @@ export default function AuthNavbar(props) {
             className={classes.listItemText}
           />
         </NavLink>
-      </ListItem>
-      <ListItem className={classes.listItem}>
+      </ListItem> */}
+      {/* <ListItem className={classes.listItem}>
         <NavLink
           to={"/auth/personal"}
           className={cx(classes.navLink, {
@@ -103,10 +103,12 @@ export default function AuthNavbar(props) {
             className={classes.listItemText}
           />
         </NavLink>
-      </ListItem>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
-        <NavLink
-          to={"https://github.com/iamhishu"}
+        <Button
+          target="_blank"
+          href="https://github.com/iamhishu"
+          //  to={"https://github.com/iamhishu"}
           style={{
             background: "#a55cbe",
             width: "90px",
@@ -123,7 +125,7 @@ export default function AuthNavbar(props) {
             disableTypography={true}
             className={classes.listItemText}
           /> */}
-        </NavLink>
+        </Button>
       </ListItem>
     </List>
   );

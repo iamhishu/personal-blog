@@ -138,7 +138,7 @@ export default function LoginPage() {
         </GridItem>
         <GridItem
           md={12}
-          justifyContent="center"
+          justifycontent="center"
           style={{ textAlign: "center" }}
         >
           <h2 className="skill-heading">

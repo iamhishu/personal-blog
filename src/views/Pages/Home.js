@@ -43,16 +43,13 @@ export default function LoginPage() {
   //   });
 
   const classes = useStyles();
-  const mainContainer = useRef();
-  /** Scroll down  */
-  const scrollDown = () => {
-    mainContainer.current.scrollIntoView({
-      behavior: "smooth",
-      block: "end",
-      inline: "nearest",
-    });
-  };
 
+  const scrollToRef = (con) => {
+    con.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const mainContainer = useRef(null);
+  /** Scroll down  */
+  const executeScroll = () => scrollToRef(mainContainer);
   return (
     <GridItem
       md={12}
@@ -136,7 +133,11 @@ export default function LoginPage() {
               >
                 1.0.0-beta
               </p>
-              <ExpandMoreIcon onClick={(e) => scrollDown(e)} fontSize="large" />
+              <ExpandMoreIcon
+                href="aboutMeCon"
+                onClick={executeScroll}
+                fontSize="large"
+              />
             </div>
           </div>
         </GridItem>
@@ -153,13 +154,17 @@ export default function LoginPage() {
         //   className={classes.container}
       >
         <GridItem
+          id="aboutMeCon"
           md={8}
           className="home-about-description"
           //justify="center"
           //container="true"
           style={{ textAlign: "center" }}
         >
-          <h1 style={{ fontSize: "2.6em", fontWeight: "400" }}>
+          <h1
+            ref={mainContainer}
+            style={{ fontSize: "2.6em", fontWeight: "400" }}
+          >
             LET ME <span className="purple"> INTRODUCE </span> MYSELF
           </h1>
           <p className="home-about-body">

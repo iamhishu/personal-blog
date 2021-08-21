@@ -65,7 +65,8 @@ export default function LoginPage() {
     >
       <GridContainer
         style={{
-          width: "100%",
+          marginLeft: "-16px",
+          width: "106%",
           height: "auto",
           backgroundImage: `url(${enggImg})`,
           textAlign: "center",
@@ -86,7 +87,8 @@ export default function LoginPage() {
               //padding: "40vh",
             }
           }
-          justify="center"
+          //container={}
+          //justify="center"
         >
           <h1
             className="heading"
@@ -107,10 +109,9 @@ export default function LoginPage() {
                 <Typewriter
                   options={{
                     strings: [
-                      "Software Engineer",
-                      "Open Source Contributor",
-                      "Php Developer",
-                      "React Developer",
+                      "Developer",
+                      "Deep Learning Engineer",
+                      "Mern Stack Developer",
                     ],
                     autoStart: true,
                     loop: true,
@@ -190,7 +191,11 @@ export default function LoginPage() {
             </i>
           </p>
         </GridItem>
-        <GridItem md={4} className="myAvtar">
+        <GridItem
+          md={4}
+          className="myAvtar"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
           <div
             style={{
               willChange: "transform",
@@ -219,7 +224,7 @@ export default function LoginPage() {
           <ul className={classes.socialList}>
             <li className="social-icons">
               <a
-                href="https://github.com/soumyajit4419"
+                href="https://github.com/iamhishu"
                 target="_blank"
                 rel="noreferrer"
                 className="icon-colour  home-social-icons"
@@ -229,7 +234,7 @@ export default function LoginPage() {
             </li>
             <li className="social-icons">
               <a
-                href="https://github.com/soumyajit4419"
+                href="https://twitter.com/its_hishu"
                 target="_blank"
                 rel="noreferrer"
                 className="icon-colour  home-social-icons"
@@ -239,7 +244,7 @@ export default function LoginPage() {
             </li>
             <li className="social-icons">
               <a
-                href="https://github.com/soumyajit4419"
+                href="https://www.instagram.com/its_hishu/"
                 target="_blank"
                 rel="noreferrer"
                 className="icon-colour  home-social-icons"
@@ -249,7 +254,7 @@ export default function LoginPage() {
             </li>
             <li className="social-icons">
               <a
-                href="https://github.com/soumyajit4419"
+                href="https://www.linkedin.com/in/its-hishu"
                 target="_blank"
                 rel="noreferrer"
                 className="icon-colour  home-social-icons"

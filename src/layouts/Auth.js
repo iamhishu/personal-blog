@@ -91,7 +91,7 @@ export default function Pages(props) {
       <div
         className={classes.wrapper}
         ref={wrapper}
-        style={{ background: "#d616ed91" }}
+        style={{ background: "#0bacec" }}
       >
         <div
           className={classes.fullPage}

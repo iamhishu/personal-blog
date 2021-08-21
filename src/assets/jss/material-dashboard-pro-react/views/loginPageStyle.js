@@ -61,6 +61,9 @@ const loginPageStyle = (theme) => ({
       borderRadius: "8px",
       background: "#fff",
     },
+    "& .home-social-icons": {
+      color: "#0bacec",
+    },
   },
   aboutContainer: {
     "& .home-about-section": {
@@ -76,9 +79,9 @@ const loginPageStyle = (theme) => ({
     },
 
     "& .home-about-body": {
-      paddingTop: "50px",
+      // paddingTop: "50px",
       fontSize: "1.4em !important",
-      textAlign: "center",
+      // textAlign: "center",
     },
   },
 
@@ -101,6 +104,9 @@ const loginPageStyle = (theme) => ({
     "& .img-fluid": {
       maxWidth: "100%",
       height: "auto",
+    },
+    "& .service-heading": {
+      fontWeight: "800",
     },
   },
 });

@@ -110,9 +110,9 @@ export default function AuthNavbar(props) {
           href="https://github.com/iamhishu"
           //  to={"https://github.com/iamhishu"}
           style={{
-            background: "#ffffff",
+            background: "rgb(14, 234, 14)",
             width: "90px",
-            color: "#0dacec",
+            color: "#fff",
             height: "47px",
             textAlign: "center",
           }}

@@ -49,6 +49,7 @@ const loginPageStyle = (theme) => ({
 
   imgCon: {},
   socialList: {
+    // color: "rgb(14, 234, 14) !important",
     display: "inline-flex",
     "& li": {
       display: "flex",
@@ -59,10 +60,9 @@ const loginPageStyle = (theme) => ({
     "& .MuiSvgIcon-root": {
       fontSize: "2.5em",
       borderRadius: "8px",
-      background: "#fff",
     },
     "& .home-social-icons": {
-      color: "#0bacec",
+      color: "#ffed00",
     },
   },
   aboutContainer: {
@@ -72,10 +72,12 @@ const loginPageStyle = (theme) => ({
       paddingTop: "70px !important",
     },
     "& .home-about-description": {
-      color: "#fff !important",
+      //color: "#fff !important",
       //  paddingTop: "100px !important",
       paddingBottom: "20px !important",
       textAlign: "center",
+      fontFamily: "monospace",
+      color: "#0eea0e",
     },
 
     "& .home-about-body": {
@@ -83,6 +85,8 @@ const loginPageStyle = (theme) => ({
       fontSize: "1.4em !important",
       // textAlign: "center",
     },
+
+    fontFamily: "monospace",
   },
 
   aboutWrapper: {

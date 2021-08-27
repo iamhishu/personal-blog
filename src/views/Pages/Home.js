@@ -79,30 +79,46 @@ export default function LoginPage() {
         {/* <GridContainer justify="center"> */}
         <GridItem
           md={12}
-          style={
-            {
-              //padding: "40vh",
-            }
-          }
+          style={{
+            //padding: "40vh",
+            fontFamily: "monospace",
+          }}
           //container={}
           //justify="center"
         >
           <h1
             className="heading"
-            style={{ marginTop: "25vh", paddingBottom: "15px" }}
+            style={{
+              marginTop: "25vh",
+              paddingBottom: "15px",
+              fontFamily: "monospace",
+            }}
           >
             Hi There!{" "}
             <span className="wave" role="img" aria-labelledby="wave">
               👋🏻
             </span>
           </h1>
-          <h1 className="heading-name">
+          <h1
+            className="heading-name"
+            style={{
+              fontFamily: "monospace",
+            }}
+          >
             {"I'M"}
-            <strong className="main-name"> Hitesh Chaudhary</strong>
+            <strong
+              className="main-name"
+              style={{
+                fontFamily: "monospace",
+              }}
+            >
+              {" "}
+              Hitesh Chaudhary
+            </strong>
           </h1>
           <div>
             <div className="Typewriter" data-testid="typewriter-wrapper">
-              <h2 style={{ fontWeight: "600" }}>
+              <h2 style={{ fontWeight: "600", fontFamily: "monospace" }}>
                 <Typewriter
                   options={{
                     strings: [
@@ -163,7 +179,12 @@ export default function LoginPage() {
         >
           <h1
             ref={mainContainer}
-            style={{ fontSize: "2.6em", fontWeight: "400" }}
+            style={{
+              fontSize: "2.6em",
+              fontWeight: "400",
+              fontFamily: "monospace",
+              color: "#0eea0e",
+            }}
           >
             LET ME <span className="purple"> INTRODUCE </span> MYSELF
           </h1>
@@ -173,26 +194,37 @@ export default function LoginPage() {
             <br />
             <br />I am fluent in classics like
             <i>
-              <b className="purple"> Php, Javascript and Reactjs. </b>
+              <b className="purple" style={{ color: "#fb0000" }}>
+                {" "}
+                Php, Javascript and Reactjs.{" "}
+              </b>
             </i>
             <br /> <br />
             My field of {"Interest's"} are building new &nbsp;
             <i>
-              <b className="purple">Web Technologies and Products </b> and also
-              in areas related to <b className="purple">Php and React js</b>
+              <b className="purple" style={{ color: "#ffed00" }}>
+                Web Technologies and Products{" "}
+              </b>{" "}
+              and also in areas related to{" "}
+              <b className="purple" style={{ color: "#ffed00" }}>
+                Php and React js
+              </b>
             </i>
             <br /> <br />
             Whenever possible, I also apply my passion for developing products
             with <b className="purple">React.js</b> and
             <i>
-              <b className="purple">
+              <b className="purple " style={{ color: "#ffed00" }}>
                 {" "}
                 Modern Javascript Library and Frameworks
               </b>
             </i>
             &nbsp; like
             <i>
-              <b className="purple"> React.js and Next.js</b>
+              <b className="purple" style={{ color: "#ffed00" }}>
+                {" "}
+                React.js and Next.js
+              </b>
             </i>
           </p>
         </GridItem>
@@ -221,8 +253,23 @@ export default function LoginPage() {
         //   className={classes.container}
       >
         <GridItem md={12} className="myAvtar" style={{ textAlign: "center" }}>
-          <h1 style={{ fontWeight: "500" }}>FIND ME ON</h1>
-          <p style={{ fontSize: "1.3em", marginTop: "-25px" }}>
+          <h1
+            style={{
+              fontWeight: "500",
+              fontFamily: "monospace",
+              color: "#0eea0e",
+            }}
+          >
+            FIND ME ON
+          </h1>
+          <p
+            style={{
+              fontSize: "1.3em",
+              marginTop: "-25px",
+              color: "#0eea0e",
+              fontFamily: "monospace",
+            }}
+          >
             Feel free to connect with me{" "}
           </p>
           {/* GitHubIcon  TwitterIcon InstagramIcon LinkedInIcon */}
@@ -234,7 +281,7 @@ export default function LoginPage() {
                 rel="noreferrer"
                 className="icon-colour  home-social-icons"
               >
-                <GitHubIcon fill="#fff" fontSize="larger" />
+                <GitHubIcon fill="#0eea0e" fontSize="larger" />
               </a>
             </li>
             <li className="social-icons">
@@ -244,7 +291,7 @@ export default function LoginPage() {
                 rel="noreferrer"
                 className="icon-colour  home-social-icons"
               >
-                <TwitterIcon fill="#fff" fontSize="larger" />
+                <TwitterIcon fill="#0eea0e" fontSize="larger" />
               </a>
             </li>
             <li className="social-icons">
@@ -254,7 +301,7 @@ export default function LoginPage() {
                 rel="noreferrer"
                 className="icon-colour  home-social-icons"
               >
-                <InstagramIcon fill="#fff" fontSize="larger" />
+                <InstagramIcon fill="#0eea0e" fontSize="larger" />
               </a>
             </li>
             <li className="social-icons">
@@ -264,7 +311,7 @@ export default function LoginPage() {
                 rel="noreferrer"
                 className="icon-colour  home-social-icons"
               >
-                <LinkedInIcon fill="#fff" fontSize="larger" />
+                <LinkedInIcon fill="#0eea0e" fontSize="larger" />
               </a>
             </li>
           </ul>

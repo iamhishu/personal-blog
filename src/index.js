@@ -21,17 +21,27 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import AuthLayout from "layouts/Auth.js";
 import RtlLayout from "layouts/RTL.js";
 import AdminLayout from "layouts/Admin.js";
+import { createMuiTheme } from "@material-ui/core/styles";
+import { ThemeProvider } from "@material-ui/styles";
 
 import "assets/scss/material-dashboard-pro-react.scss?v=1.10.0";
 
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: `monospace`,
+  },
+});
+
 ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      <Route path="/rtl" component={RtlLayout} />
-      <Route path="/auth" component={AuthLayout} />
-      <Route path="/admin" component={AdminLayout} />
-      <Redirect from="/" to="/auth/home" />
-    </Switch>
-  </BrowserRouter>,
+  <ThemeProvider theme={theme}>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/rtl" component={RtlLayout} />
+        <Route path="/auth" component={AuthLayout} />
+        <Route path="/admin" component={AdminLayout} />
+        <Redirect from="/" to="/auth/home" />
+      </Switch>
+    </BrowserRouter>
+  </ThemeProvider>,
   document.getElementById("root")
 );

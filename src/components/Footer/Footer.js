@@ -36,11 +36,25 @@ export default function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="#home"
+                href="https://github.com/iamhishu"
                 className={block}
-                style={{ textTransform: "capitalize", fontWeight: "500" }}
+                style={{
+                  textTransform: "capitalize",
+                  fontWeight: "500",
+                  fontFamily: "monospace",
+                  color: "#0eea0e",
+                }}
               >
-                Designed and Developed by Hitesh Chaudhary
+                Designed and Developed by{" "}
+                <span
+                  style={{
+                    color: "#ffed00",
+                    textDecoration: "underline",
+                    textTransform: "lowercase",
+                  }}
+                >
+                  Hitesh Chaudhary
+                </span>
               </a>
             </ListItem>
           </List>

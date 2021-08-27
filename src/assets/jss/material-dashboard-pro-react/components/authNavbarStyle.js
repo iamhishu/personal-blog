@@ -107,7 +107,8 @@ const pagesHeaderStyle = (theme) => ({
     },
   },
   navLink: {
-    color: whiteColor,
+    fontFamily: "monospace",
+    color: "rgb(14, 234, 14)",
     margin: "0 5px",
     paddingTop: "15px",
     paddingBottom: "15px",
@@ -121,7 +122,8 @@ const pagesHeaderStyle = (theme) => ({
     padding: "10px 15px",
     textDecoration: "none",
     "&:hover,&:focus": {
-      color: whiteColor,
+      color: "rgb(14, 234, 14)",
+      fontFamily: "monospace",
       background: "rgba(" + hexToRgb(grayColor[17]) + ", 0.2)",
     },
   },

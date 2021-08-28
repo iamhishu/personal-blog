@@ -230,6 +230,8 @@ export default function LoginPage() {
         </GridItem>
         <GridItem
           md={4}
+          xs={12}
+          sm={12}
           className="myAvtar"
           style={{ display: "flex", justifyContent: "center" }}
         >
@@ -252,7 +254,13 @@ export default function LoginPage() {
         // justify="center"
         //   className={classes.container}
       >
-        <GridItem md={12} className="myAvtar" style={{ textAlign: "center" }}>
+        <GridItem
+          md={12}
+          xs={12}
+          sm={12}
+          className="myAvtar"
+          style={{ textAlign: "center" }}
+        >
           <h1
             style={{
               fontWeight: "500",
